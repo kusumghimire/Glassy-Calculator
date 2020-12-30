@@ -43,4 +43,29 @@ body {
         backdrop-filter: blur(20px);
         border-radius: 4px;
     }
+    .display {
+        position: relative;
+        height: 10rem;
+    }
+    .buttons {
+        height: 20rem;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        background-color: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(10px);
+        border-top-left-radius: 1rem;
+        border-top-right-radius: 1rem;
+        overflow: hidden;
+        cursor: pointer;
+    }
+    .buttons>div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 2px;
+        font-size: 1.2em;
+        &:hover {
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+    }
 }

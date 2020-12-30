@@ -52,4 +52,42 @@ body {
           backdrop-filter: blur(20px);
   border-radius: 4px;
 }
+
+.center-con .display {
+  position: relative;
+  height: 10rem;
+}
+
+.center-con .buttons {
+  height: 20rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  background-color: rgba(255, 255, 255, 0.1);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.center-con .buttons > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 2px;
+  font-size: 1.2em;
+}
+
+.center-con .buttons > div:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
 /*# sourceMappingURL=style.css.map */
