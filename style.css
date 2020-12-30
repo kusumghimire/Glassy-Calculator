@@ -58,6 +58,18 @@ body {
   height: 10rem;
 }
 
+.center-con .display .screen {
+  position: absolute;
+  bottom: 0.5rem;
+  width: 94%;
+  font-size: 3em;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  overflow: hidden;
+  text-align: right;
+}
+
 .center-con .buttons {
   height: 20rem;
   display: -ms-grid;
@@ -89,5 +101,19 @@ body {
 
 .center-con .buttons > div:hover {
   background-color: rgba(255, 255, 255, 0.1);
+}
+
+.center-con .buttons > div:active {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.center-con .operators {
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.1);
+  right: 0;
+  top: 0;
+  width: 70px;
+  height: 100%;
+  z-index: -1;
 }
 /*# sourceMappingURL=style.css.map */
